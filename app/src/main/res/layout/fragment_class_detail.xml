@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.closedevice.fastapp.ui.groupclass.fragment.ClassDetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/view_line"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="3dp"
+                android:background="#fff">
+                <LinearLayout
+                    android:padding="12dp"
+                    android:orientation="vertical"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/space_16"
+                        android:textColor="@color/black"
+                        android:text="@string/study_aims"/>
+
+                    <EditText
+                        android:layout_marginTop="@dimen/space_8"
+                        android:id="@+id/et_study_aims"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/space_14"
+                        android:hint="请输入学习要求，最多300字" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <include layout="@layout/view_line"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="3dp"
+                android:background="#fff">
+                <LinearLayout
+                    android:padding="12dp"
+                    android:orientation="vertical"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/space_16"
+                        android:textColor="@color/black"
+                        android:text="@string/syllabus"/>
+                    <EditText
+                        android:layout_marginTop="@dimen/space_8"
+                        android:id="@+id/et_syllabus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/space_14"
+                        android:hint="请输入教学进度，最多300字" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <include layout="@layout/view_line"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="3dp"
+                android:background="#fff">
+                <LinearLayout
+                    android:padding="12dp"
+                    android:orientation="vertical"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/space_16"
+                        android:textColor="@color/black"
+                        android:text="@string/exam_schedule"/>
+
+                    <EditText
+                        android:layout_marginTop="@dimen/space_8"
+                        android:id="@+id/et_exam_schedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:textColor="@color/gray"
+                        android:hint="请输入考试安排，最多300字"
+                        android:textSize="@dimen/space_14"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <include layout="@layout/view_line"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
