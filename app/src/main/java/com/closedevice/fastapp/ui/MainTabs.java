@@ -2,7 +2,8 @@ package com.closedevice.fastapp.ui;
 
 
 import com.closedevice.fastapp.R;
-import com.closedevice.fastapp.ui.gan.fragment.GanPagerFragment;
+import com.closedevice.fastapp.ui.CourseTable.fragment.CourseTableFragment;
+import com.closedevice.fastapp.ui.CourseTable.fragment.GanPagerFragment;
 import com.closedevice.fastapp.ui.setting.fragment.SettingFragment;
 import com.closedevice.fastapp.ui.groupclass.fragment.BKFragment;
 
@@ -10,7 +11,7 @@ import com.closedevice.fastapp.ui.groupclass.fragment.BKFragment;
 public enum MainTabs {
 
     TAB_WX(0, R.string.main_tab_meizhi1, R.drawable.tab_icon_active, BKFragment.class),
-    TAB_GAN(1, R.string.main_tab_meizhi2, R.drawable.tab_icon_gan, GanPagerFragment.class),
+    TAB_GAN(1, R.string.main_tab_meizhi2, R.drawable.tab_icon_gan, CourseTableFragment.class),
     TAB_SETTING(2, R.string.main_tab_meizhi3, R.drawable.tab_icon_user, SettingFragment.class);
 
     private int index;

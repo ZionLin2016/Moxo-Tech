@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--标题栏和底部tab按钮颜色-->
+    <color name="barColor">#007fff</color>
+
+    <!--背景颜色-->
+    <color name="backgrund">#EEEEEE</color>
+
+    <!--主色调-->
+    <color name="main_color">#319D0B</color>
+
+    <!--分割线-->
+    <color name="partition_line">#CDCDCD</color>
+</resources>

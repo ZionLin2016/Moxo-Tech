@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FastApp-master.iml" filepath="$PROJECT_DIR$/FastApp-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photoselectorlibrary/photoselectorlibrary.iml" filepath="$PROJECT_DIR$/photoselectorlibrary/photoselectorlibrary.iml" />
     </modules>
   </component>
 </project>

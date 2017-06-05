@@ -11,10 +11,9 @@ import com.closedevice.fastapp.AppContext;
 import com.closedevice.fastapp.R;
 import com.closedevice.fastapp.base.adapter.ListBaseAdapter;
 import com.closedevice.fastapp.base.ui.BaseListFragment;
-import com.closedevice.fastapp.db.RealmHelper;
 import com.closedevice.fastapp.model.LikeRecord;
 import com.closedevice.fastapp.model.LikeRecordRealm;
-import com.closedevice.fastapp.model.response.wx.WXResult;
+//import com.closedevice.fastapp.model.response.wx.WXResult;
 import com.closedevice.fastapp.router.Router;
 import com.closedevice.fastapp.ui.setting.adapter.LikeReadAdapter;
 
@@ -40,35 +39,35 @@ public class LikeReadFragment extends BaseListFragment<LikeRecord> {
 
     @Override
     protected void sendRequest() {
-        RealmHelper realmHelper = new RealmHelper(AppContext.context());
+        //RealmHelper realmHelper = new RealmHelper(AppContext.context());
 
 
-        Observable.just(realmHelper.findAllLikeRecord()).flatMap(new Func1<List<LikeRecordRealm>, Observable<WXResult<List<LikeRecord>>>>() {
-
-            @Override
-            public Observable<WXResult<List<LikeRecord>>> call(List<LikeRecordRealm> likeRecordRealms) {
-                List<LikeRecord> records = new ArrayList<>();
-                LikeRecord record = null;
-                for (LikeRecordRealm recordRealm : likeRecordRealms) {
-                    record = new LikeRecord();
-                    record.setId(recordRealm.getId());
-                    record.setImage(recordRealm.getImage());
-                    record.setTime(recordRealm.getTime());
-                    record.setTitle(recordRealm.getTitle());
-                    record.setType(recordRealm.getType());
-                    records.add(record);
-
-                }
-
-                final WXResult<List<LikeRecord>> result = new WXResult<>();
-                result.setCode(200);
-                result.setNewslist(records);
-                return Observable.just(result);
-
-
-            }
-        })
-                .subscribe(mSubscriber);
+//        Observable.just(realmHelper.findAllLikeRecord()).flatMap(new Func1<List<LikeRecordRealm>, Observable<WXResult<List<LikeRecord>>>>() {
+//
+//            @Override
+//            public Observable<WXResult<List<LikeRecord>>> call(List<LikeRecordRealm> likeRecordRealms) {
+//                List<LikeRecord> records = new ArrayList<>();
+//                LikeRecord record = null;
+//                for (LikeRecordRealm recordRealm : likeRecordRealms) {
+//                    record = new LikeRecord();
+//                    record.setId(recordRealm.getId());
+//                    record.setImage(recordRealm.getImage());
+//                    record.setTime(recordRealm.getTime());
+//                    record.setTitle(recordRealm.getTitle());
+//                    record.setType(recordRealm.getType());
+//                    records.add(record);
+//
+//                }
+//
+//                final WXResult<List<LikeRecord>> result = new WXResult<>();
+//                result.setCode(200);
+//                result.setNewslist(records);
+//                return Observable.just(result);
+//
+//
+//            }
+//        })
+//                .subscribe(mSubscriber);
 
     }
 
@@ -82,7 +81,7 @@ public class LikeReadFragment extends BaseListFragment<LikeRecord> {
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         LikeRecord item = mAdapter.getItem(position);
         if (item != null) {
-            Router.showDetail(getActivity(), item.getTitle(), item.getId(), item.getImage(), "", "");
+            //Router.showDetail(getActivity(), item.getTitle(), item.getId(), item.getImage(), "", "");
         }
     }
 
@@ -94,9 +93,9 @@ public class LikeReadFragment extends BaseListFragment<LikeRecord> {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        RealmHelper realmHelper = new RealmHelper(AppContext.context());
-        realmHelper.removeAllLikeRecord();
-        mAdapter.clear();
+//        RealmHelper realmHelper = new RealmHelper(AppContext.context());
+//        realmHelper.removeAllLikeRecord();
+//        mAdapter.clear();
         refresh();
         return true;
     }

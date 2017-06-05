@@ -1,9 +1,9 @@
 package com.closedevice.fastapp.model;
 
-import io.realm.RealmObject;
+//import io.realm.RealmObject;
 
 
-public class ReadRecordRealm extends RealmObject {
+public class ReadRecordRealm  {
     private String id;
     private int type;
     private long time;

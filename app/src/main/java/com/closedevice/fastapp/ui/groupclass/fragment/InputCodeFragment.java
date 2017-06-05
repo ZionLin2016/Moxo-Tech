@@ -15,6 +15,8 @@ import android.widget.Toast;
 import com.closedevice.fastapp.R;
 import com.closedevice.fastapp.router.Router;
 
+import butterknife.ButterKnife;
+
 
 public class InputCodeFragment extends Fragment {
 
@@ -47,4 +49,5 @@ public class InputCodeFragment extends Fragment {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

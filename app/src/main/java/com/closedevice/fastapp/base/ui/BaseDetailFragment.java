@@ -11,7 +11,7 @@ import com.closedevice.fastapp.R;
 import com.closedevice.fastapp.api.exception.ApiException;
 import com.closedevice.fastapp.base.BaseSubscriber;
 import com.closedevice.fastapp.model.base.Entity;
-import com.closedevice.fastapp.model.response.wx.WXResult;
+import com.closedevice.fastapp.model.response.bk.BKResult;
 import com.closedevice.fastapp.view.empty.EmptyLayout;
 
 import java.io.IOException;
@@ -64,7 +64,7 @@ public class BaseDetailFragment extends BaseFragment implements MySwipeRefreshLa
 
 
     public BaseSubscriber getSubscriber() {
-        return new BaseSubscriber<WXResult<?>>() {
+        return new BaseSubscriber<BKResult<?>>() {
             @Override
             public void onError(Throwable e) {
                 e.printStackTrace();
@@ -86,9 +86,9 @@ public class BaseDetailFragment extends BaseFragment implements MySwipeRefreshLa
             }
 
             @Override
-            public void onNext(WXResult<?> result) {
+            public void onNext(BKResult<?> result) {
                 if (result.isOk()) {
-                    Entity entry = (Entity) result.getNewslist();
+                    Entity entry = (Entity) result.getResults();
                     if (entry != null) {
                         if (mEmptyLayout != null)
                             mEmptyLayout.setErrorType(EmptyLayout.STATE_HIDE_LAYOUT);

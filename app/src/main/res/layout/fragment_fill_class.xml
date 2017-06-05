@@ -11,7 +11,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:background="@color/lightest_gray"
         android:gravity="center_horizontal">
 
         <ImageView
@@ -44,16 +43,15 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <include layout="@layout/view_line"/>
 
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="@dimen/space_12"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:gravity="center_vertical">
 
                 <TextView
                     android:id="@+id/tv_class"
@@ -246,6 +244,13 @@
                     android:layout_height="wrap_content"
                     android:text="设置班课详情"/>
 
+                <TextView
+                    android:id="@+id/tv_classdetail_set"
+                    android:text="未设置"
+                    android:textColor="@color/gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -259,7 +264,7 @@
     </android.support.v7.widget.CardView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bt_create_class"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

@@ -2,9 +2,11 @@ package com.closedevice.fastapp.ui;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -23,12 +25,13 @@ public class AppStart extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Activity activity = AppManager.getActivity(MainActivity.class);
+        Activity activity = AppManager.getActivity(LoginActivity.class);
         if (activity != null && !activity.isFinishing()) {
             finish();
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
+
 
         View root = findViewById(R.id.activity_app_start);
         if (root != null && Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP
@@ -53,10 +56,10 @@ public class AppStart extends Activity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Router.showMain(AppStart.this);
+                        //Router.showMain(AppStart.this);
+                        Router.showLogin(AppStart.this);
                     }
                 }, TIME_DELAY);
-
             }
         });
 

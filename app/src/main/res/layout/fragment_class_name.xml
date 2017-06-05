@@ -2,12 +2,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.closedevice.fastapp.ui.groupclass.fragment.ClassNameFragment">
+    tools:context="com.closedevice.fastapp.ui.groupclass.fragment.InputCodeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/et_margin"
+            android:layout_marginRight="@dimen/et_margin"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:hint="我要教新课了，创建一个课程名称" />
+    </LinearLayout>
+
 
 </FrameLayout>

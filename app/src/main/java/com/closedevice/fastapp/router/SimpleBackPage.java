@@ -1,5 +1,17 @@
 package com.closedevice.fastapp.router;
 
+
+
+import com.closedevice.fastapp.ui.BkInside.fragment.AddNotifyFragment;
+import com.closedevice.fastapp.ui.BkInside.fragment.SetUrlAdrFragment;
+import com.closedevice.fastapp.ui.BkInside.fragment.SetUrlAimFragment;
+import com.closedevice.fastapp.ui.BkInside.fragment.SetUrlDemandFragment;
+import com.closedevice.fastapp.ui.BkInside.fragment.SetUrlGroupFragment;
+import com.closedevice.fastapp.ui.BkInside.fragment.SetUrlTitleFragment;
+import com.closedevice.fastapp.ui.BkInside.fragment.UploadDocFragment;
+import com.closedevice.fastapp.ui.BkInside.fragment.UploadFromPcFragment;
+import com.closedevice.fastapp.ui.BkInside.fragment.UploadUrlFragment;
+import com.closedevice.fastapp.ui.BkInsideActivity;
 import com.closedevice.fastapp.ui.common.DetailFragment;
 import com.closedevice.fastapp.ui.groupclass.fragment.ClassDetailFragment;
 import com.closedevice.fastapp.ui.groupclass.fragment.ClassNameFragment;
@@ -22,7 +34,17 @@ public enum SimpleBackPage {
     INPUT_CODE(6, "加入班课",InputCodeFragment.class),
     CLASS_NAME(7, "课程",ClassNameFragment.class),
     TEXTBOOK(8, "数字教材", SetBookFragment.class),
-    CLASS_DETAIL(9, "班课详情", ClassDetailFragment.class);
+    SET_CLASS_DETAIL(9, "班课详情", ClassDetailFragment.class),
+    UPLOAD_FROM_PC(10,"从PC上传", UploadFromPcFragment.class),
+    UPLOAD_URL(11, "添加网页链接", UploadUrlFragment.class),
+    UPLOAD_DOC(12, "资源库", UploadDocFragment.class),
+    ADD_NOTIFY(13, "通知", AddNotifyFragment.class),
+    SET_URL_ADDRESS(14,"设置链接", SetUrlAdrFragment.class),
+    SET_URL_TITLE(15,"设置标题", SetUrlTitleFragment.class),
+    SET_URL_GROUP(16,"选择分组", SetUrlGroupFragment.class),
+    SET_URL_AIM(17,"知识点", SetUrlAimFragment.class),
+    SET_URL_DEMAND(18, "学习要求", SetUrlDemandFragment.class);
+    //SHOW_CLASS_DETAIL(10, "待设置", BkInsideActivity.class);
 
     private int id;
     private String title;

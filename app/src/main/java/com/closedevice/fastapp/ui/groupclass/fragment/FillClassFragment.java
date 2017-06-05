@@ -1,41 +1,90 @@
 package com.closedevice.fastapp.ui.groupclass.fragment;
 
+import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.Message;
 import android.provider.MediaStore;
 import android.support.annotation.RequiresApi;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.closedevice.fastapp.AppConstant;
+import com.closedevice.fastapp.AppContext;
 import com.closedevice.fastapp.R;
+import com.closedevice.fastapp.api.remote.ApiFactory;
+import com.closedevice.fastapp.base.BaseObserver;
 import com.closedevice.fastapp.base.ui.BaseFragment;
+import com.closedevice.fastapp.gen.BkRecordDao;
+import com.closedevice.fastapp.gen.DaoMaster;
+import com.closedevice.fastapp.gen.DaoSession;
+import com.closedevice.fastapp.model.record.BkRecord;
+import com.closedevice.fastapp.model.response.bk.BKItem;
+import com.closedevice.fastapp.model.response.bk.BKResult;
+import com.closedevice.fastapp.model.uploadFile.UploadList;
+import com.closedevice.fastapp.model.uploadFile.UploadMsg;
 import com.closedevice.fastapp.router.Router;
 import com.closedevice.fastapp.ui.common.CustomPopWindow;
+import com.closedevice.fastapp.ui.groupclass.model.ClassList;
+import com.closedevice.fastapp.ui.groupclass.model.DetailListBean;
+import com.closedevice.fastapp.ui.groupclass.model.EnumEventType;
+import com.closedevice.fastapp.ui.groupclass.model.MessageEvent;
+import com.google.gson.Gson;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
 
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
+
+import static android.content.Context.MODE_PRIVATE;
 
 
 public class FillClassFragment extends BaseFragment implements View.OnClickListener {
-
+    static final String TAG = "FillClassFragment";
     private static final int PHOTO_REQUEST_GALLERY = 1;// 从相册中选择
     private static final int PHOTO_REQUEST_CUT = 2;// 结果
+    public static String picturePath,picUrl;
+    ArrayList<String> filePaths = new ArrayList<String>();
+    private BkRecordDao bkDao;
+
     CustomPopWindow popWindow;
+    ClassList classList = new ClassList();
 
     @Bind(R.id.ly_root_main)
     LinearLayout ly_root_main;
@@ -59,13 +108,15 @@ public class FillClassFragment extends BaseFragment implements View.OnClickListe
     TextView tv_textbook_set;
     @Bind(R.id.ly_class_detail)
     LinearLayout ly_class_detail;
+    @Bind(R.id.tv_classdetail_set)
+    TextView tv_classdetail_set;
+    @Bind(R.id.bt_create_class)
+    Button bt_create_class;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(getLayoutId(), container, false);
-        initData();
         initView(view);
-        ButterKnife.bind(this, view);
         return view;
     }
 
@@ -75,11 +126,14 @@ public class FillClassFragment extends BaseFragment implements View.OnClickListe
     }
 
     @Override
-    public void initData() {
+    public void initView(View view) {
+        ButterKnife.bind(this, view);
+        EventBus.getDefault().register(this);//eventbus绑定
+        initDbHelp();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    @OnClick({R.id.iv_class_cover, R.id.ly_course_name, R.id.tv_course_name, R.id.ly_class_textbook, R.id.tv_textbook_set, R.id.ly_class_detail})
+    @OnClick({R.id.iv_class_cover, R.id.ly_course_name, R.id.rb_bk, R.id.rb_other_bk, R.id.ly_class_textbook, R.id.ly_class_detail, R.id.bt_create_class})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.iv_class_cover:
@@ -88,20 +142,31 @@ public class FillClassFragment extends BaseFragment implements View.OnClickListe
             case R.id.ly_course_name:
                 Router.inputClassName(getActivity());
                 break;
-            case R.id.tv_course_name:
+            case R.id.rb_bk:
+                classList.setClass_type("班级课表班课");
+                break;
+            case R.id.rb_other_bk:
+                classList.setClass_type("其他班课");
                 break;
             case R.id.ly_class_textbook:
                 Router.setTextBook(getActivity());
                 break;
-            case R.id.tv_textbook_set:
-                break;
             case R.id.ly_class_detail:
                 Router.setClassDetail(getActivity());
+                break;
+            case R.id.bt_create_class:
+                Gson gson = new Gson();
+                String data = gson.toJson(classList);
+                saveAndSend();
+                EventBus.getDefault().post(data);
+                getActivity().finish();
             default:
                 break;
 
         }
     }
+
+
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     private void showPopMenu() {
@@ -130,7 +195,9 @@ public class FillClassFragment extends BaseFragment implements View.OnClickListe
                 }
                 switch (v.getId()){
                     case R.id.tv_photo_album:
-                        selectPhotoFromGallery();
+                        //调用系统图库
+                        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                        startActivityForResult(intent, PHOTO_REQUEST_GALLERY);
                         break;
                     case R.id.tv_photo_default:
                         setDefaultPic();
@@ -148,20 +215,27 @@ public class FillClassFragment extends BaseFragment implements View.OnClickListe
 
     }
 
-    private void selectPhotoFromGallery() {
-        //调用系统图库
-        Intent intent = new Intent(Intent.ACTION_PICK, null);
-        intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
-        startActivityForResult(intent, PHOTO_REQUEST_GALLERY);
-    }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case PHOTO_REQUEST_GALLERY:// 当选择从本地获取图片时
-                // 做非空判断，当我们觉得不满意想重新剪裁的时候便不会报异常
-                if (data != null)
-                    startPhotoZoom(data.getData(), 150);
+                if (data != null){
+                    Uri selectedImage = data.getData();
+                    String[] filePathColumn = { MediaStore.Images.Media.DATA };
+
+                    Cursor cursor = getActivity().getContentResolver().query(selectedImage,
+                            filePathColumn, null, null, null);
+                    cursor.moveToFirst();
+
+                    int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+                    picturePath = cursor.getString(columnIndex);
+                    Log.v(TAG,"00000000000"+picturePath);
+                    filePaths.clear();
+                    filePaths.add(picturePath);
+                    cursor.close();
+                    startPhotoZoom(selectedImage, 150);
+                }
                 break;
             case PHOTO_REQUEST_CUT:// 返回的结果
                 if (data != null)
@@ -192,52 +266,200 @@ public class FillClassFragment extends BaseFragment implements View.OnClickListe
 
 
     private void saveAndsetPic(Intent data) {
+
         Bundle extras = data.getExtras();
         if (extras != null) {
             Bitmap photo = extras.getParcelable("data");
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            photo.compress(Bitmap.CompressFormat.PNG, 100, baos);
             Drawable drawable = new BitmapDrawable(photo);
             iv_calss_cover.setImageDrawable(drawable);
-            //file.delete();//设置成功后清除之前的照片文件
+
+            Log.v(TAG,">>>>>>>>>>>>>>"+filePaths.toString());
+            try {
+                upTask(filePaths);
+                filePaths.clear();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
         }
     }
 
     private void setDefaultPic() {
         iv_calss_cover.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.default_cover));
+        classList.setCover_address(AppConstant.API_BK_URL+"default_cover.png");
     }
 
 
 
 
+    /**
+     * 事件订阅者自定义的接收方法
+     * @param event
+     */
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(MessageEvent event) {
+
+        if(event.getType() == EnumEventType.COURSE_NAME.getType()){
+            tv_course_name.setText(event.getData());
+            classList.setCourse_name(event.getData());
+        }else if(event.getType() == EnumEventType.BK_TYPE.getType()){
+            Toast.makeText(getActivity(),"待处理", Toast.LENGTH_SHORT);
+        }else if(event.getType() == EnumEventType.BOOK_NAME.getType()){
+            tv_textbook_set.setText(event.getData());
+            classList.setClass_book(event.getData());
+        }else if (event.getType() == EnumEventType.CLASS_DETAIL.getType()) {
+            Gson gson = new Gson();
+            DetailListBean dlb = gson.fromJson(event.getData(), DetailListBean.class);
+
+            classList.setStudy_aims(dlb.getStudy_aims());
+            classList.setSyllabus(dlb.getSyllabus());
+            classList.setExam_schedule(dlb.getExam_schedule());
+
+            tv_classdetail_set.setText(dlb.getStatus());
+        }
+    }
+
+    private void saveAndSend() {
+        new Handler().post(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    //List<UploadMsg> files = new UpTaskUtils().upTask(filePaths);
+
+                    BkRecord br = new BkRecord();
+                    String code = Integer.toString((int) ((Math.random()*9+1)*100000));
+                    classList.setInvite_code(code);
+                    classList.setClass_type("班级课表班课");
+                    classList.setClass_name(et_class_name.getText().toString());
+
+                    //获取info文件中的内容
+                    SharedPreferences sp =  AppContext.getInstance().getSharedPreferences("info", MODE_PRIVATE);
+                    String username = sp.getString("username","");
+                    classList.setUsername(username);
+
+                    if(classList.getCover_address()==null){
+                        br.setCover_address(picUrl);
+                    }else{
+                        br.setCover_address(classList.getCover_address());
+                    }
+
+                    br.setUsername(classList.getUsername());
+                    br.setStudy_aims(classList.getStudy_aims());
+                    br.setClass_type(classList.getClass_type());
+                    br.setClass_book(classList.getClass_book());
+                    br.setClass_name(classList.getClass_name());
+                    br.setCourse_name(classList.getCourse_name());
+                    br.setExam_schedule(classList.getExam_schedule());
+                    br.setInvite_code(classList.getInvite_code());
+                    br.setSyllabus(classList.getSyllabus());
+                    br.setUsername(classList.getUsername());
 
 
+                    bkDao.insert(br);
+                    ApiFactory.getsBKApi().getBKAdd(br)
+                            .subscribeOn(Schedulers.io())
+                            .observeOn(AndroidSchedulers.mainThread())
+                            .subscribe(subscriber);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    protected BaseObserver subscriber = new BaseObserver<BKResult<BKItem>>(){
+        @Override
+        public void onCompleted() {
+            Log.v(TAG, "delay onCompleted");
+        }
+
+        @Override
+        public void onNext(BKResult<BKItem> bkResult) {
+            String jsonData = bkResult.getMsg();
+            Log.v(TAG, "添加成功，返回：" +jsonData);
+            getActivity().finish();
+        }
+
+        @Override
+        public void onError(Throwable error) {
+            Log.v(TAG, "delay onError"+error.getMessage());
+        }
+    };
+
+    private void initDbHelp() {
+        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(getActivity(), "bk-db", null);
+        SQLiteDatabase db = helper.getWritableDatabase();
+        DaoMaster daoMaster = new DaoMaster(db);
+        DaoSession daoSession = daoMaster.newSession();
+        bkDao = daoSession.getBkRecordDao();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        ButterKnife.unbind(this);
+    }
 
 
-//    @Override
-//    public void initView(View view) {
-//        super.initView(view);
-//        // 定义拍照后存放图片的文件位置和名称，使用完毕后可以方便删除
-//        file = new File(Environment.getExternalStorageDirectory(), "temp.jpg");
-//        file.delete();// 清空之前的文件
-//    }
+    private void upTask(ArrayList<String> filePath) throws Exception {
+        ArrayList<String> arrayList = filePath;
 
-//    private void saveAndsetPic(Intent picdata) {
-//        Bundle bundle = picdata.getExtras();
-//        if (bundle != null) {
-//            Bitmap photo = bundle.getParcelable("data");
-//            //保存到SD卡
-//            String imageName = System.currentTimeMillis() + "";
-//            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-//            photo.compress(Bitmap.CompressFormat.PNG, 100, baos);
-//            byte[] p = baos.toByteArray();
-//            new File.writeBytes(SDCardPath + "/imageCache", imageName, p);
-//            //将图片名字保存带本地
-//            SharedPreferences sp = getActivity().getSharedPreferences("imageName", MODE_PRIVATE);
-//            sp.edit().putString("name", imageName).commit();
-//
-//            //设置到界面
-//            Drawable drawable = new BitmapDrawable(photo);
-//            iv_calss_cover.setBackgroundDrawable(drawable);
-//        }
-//    }
+        //异步的客户端对象
+        AsyncHttpClient client = new AsyncHttpClient();
+        //指定url路径
+        String url = AppConstant.UPLOAD_URL;
+        //封装文件上传的参数
+        RequestParams params = new RequestParams();
 
+        for (int i = 0; i < arrayList.size(); i++) {
+            File file = new File(arrayList.get(0).toString());
+            try {
+                params.put("profile_picture", file);
+                //执行post请求
+                executePost(client, url, params);
+
+            } catch (Exception e) {
+                System.out.println("文件不存在----------");
+            }
+
+        }
+    }
+
+    public void executePost(AsyncHttpClient client, String url, RequestParams params) {
+        client.post(url, params, new AsyncHttpResponseHandler() {
+
+            @Override
+            public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody) {
+                if (statusCode == 200) {
+                    //获取结果
+                    try {
+                        String result = new String(responseBody, "utf-8").toString();
+                        Log.i("TAG", "------------------" + result);
+                        Gson gson = new Gson();
+                        UploadList ul = gson.fromJson(result, UploadList.class);
+                        List<UploadMsg> msgList = ul.getContent();
+                        UploadMsg um = msgList.get(0);
+                        picUrl = um.getResource_address();
+                        Log.v(TAG,"1111111111"+picUrl);
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody, Throwable error) {
+                error.printStackTrace();
+            }
+
+        });
+    }
 }

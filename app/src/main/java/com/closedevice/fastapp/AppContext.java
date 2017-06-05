@@ -11,7 +11,6 @@ import com.closedevice.fastapp.util.LogUtils;
 import com.closedevice.fastapp.util.OSUtil;
 import com.closedevice.fastapp.util.SafeUtils;
 import com.closedevice.fastapp.util.StringUtils;
-import com.tencent.smtt.sdk.QbSdk;
 
 import java.io.File;
 import java.security.NoSuchAlgorithmException;
@@ -31,27 +30,27 @@ public class AppContext extends BaseApplication {
         instance = this;
 //        Thread.setDefaultUncaughtExceptionHandler(AppCrash.getAppExceptionHandler());
         LogUtils.onStrictMode();
-        initQbSdk();
+        //initQbSdk();
     }
 
-    private void initQbSdk() {
-        try {
-            QbSdk.allowThirdPartyAppDownload(true);
-            QbSdk.initX5Environment(getApplicationContext(), QbSdk.WebviewInitType.FIRSTUSE_AND_PRELOAD, new QbSdk.PreInitCallback() {
-                @Override
-                public void onCoreInitFinished() {
-
-                }
-
-                @Override
-                public void onViewInitFinished(boolean b) {
-
-                }
-            });
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    private void initQbSdk() {
+//        try {
+//            QbSdk.allowThirdPartyAppDownload(true);
+//            QbSdk.initX5Environment(getApplicationContext(), QbSdk.WebviewInitType.FIRSTUSE_AND_PRELOAD, new QbSdk.PreInitCallback() {
+//                @Override
+//                public void onCoreInitFinished() {
+//
+//                }
+//
+//                @Override
+//                public void onViewInitFinished(boolean b) {
+//
+//                }
+//            });
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     public static AppContext getInstance() {
         return instance;

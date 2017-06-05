@@ -13,6 +13,8 @@
     <color name="actionbar_background">#0b988f</color>
     <color name="window_background">#EBEBEB</color>
     <color name="primarybar_background">#FCFCFC</color>
+    <color name="text_hint">#b3b3b0</color>
+    <color name="item_divider">#EFEFEF</color>
 
     <!--分割线颜色-->
     <color name="primarybar_split_color">#D6D6D6</color>

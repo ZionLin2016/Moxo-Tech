@@ -254,4 +254,25 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
+    <style name="MyErrorText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <style name="ErrorAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <style name="content_item">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+
 </resources>

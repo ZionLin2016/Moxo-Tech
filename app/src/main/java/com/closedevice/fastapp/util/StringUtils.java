@@ -1,5 +1,7 @@
 package com.closedevice.fastapp.util;
 
+import android.widget.TextView;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -203,4 +205,130 @@ public class StringUtils {
     }
 
 
+    private static String currentString = "";
+    /**获取刚传入处理后的string
+     * @must 上个影响currentString的方法 和 这个方法都应该在同一线程中，否则返回值可能不对
+     * @return
+     */
+    public static String getCurrentString() {
+        return currentString == null ? "" : currentString;
+    }
+
+
+    //获取string,为null则返回""
+    public static String getString(TextView tv) {
+        if (tv == null || tv.getText() == null) {
+            return "";
+        }
+        return getString(tv.getText().toString());
+    }
+    //获取string,为null则返回""
+    public static String getString(Object object) {
+        return object == null ? "" : getString(String.valueOf(object));
+    }
+    //获取string,为null则返回""
+    public static String getString(CharSequence cs) {
+        return cs == null ? "" : getString(cs.toString());
+    }
+    //获取string,为null则返回""
+    public static String getString(String s) {
+        return s == null ? "" : s;
+    }
+
+
+
+    //获取string,为null则返回""
+    public static String getTrimedString(TextView tv) {
+        return getTrimedString(getString(tv));
+    }
+    //获取string,为null则返回""
+    public static String getTrimedString(Object object) {
+        return getTrimedString(getString(object));
+    }
+
+    public static String getTrimedString(CharSequence cs) {
+        return getTrimedString(getString(cs));
+    }
+
+    public static String getTrimedString(String s) {
+        return getString(s).trim();
+    }
+
+
+    public static String getNoBlankString(TextView tv) {
+        return getNoBlankString(getString(tv));
+    }
+
+    public static String getNoBlankString(Object object) {
+        return getNoBlankString(getString(object));
+    }
+
+    public static String getNoBlankString(CharSequence cs) {
+        return getNoBlankString(getString(cs));
+    }
+
+    public static String getNoBlankString(String s) {
+        return getString(s).replaceAll(" ", "");
+    }
+
+    public static boolean isNotEmpty(TextView tv, boolean trim) {
+        return isNotEmpty(getString(tv), trim);
+    }
+    /**判断字符是否非空
+     * @param object
+     * @param trim
+     * @return
+     */
+    public static boolean isNotEmpty(Object object, boolean trim) {
+        return isNotEmpty(getString(object), trim);
+    }
+    /**判断字符是否非空
+     * @param cs
+     * @param trim
+     * @return
+     */
+    public static boolean isNotEmpty(CharSequence cs, boolean trim) {
+        return isNotEmpty(getString(cs), trim);
+    }
+    /**判断字符是否非空
+     * @param s
+     * @param trim
+     * @return
+     */
+    public static boolean isNotEmpty(String s, boolean trim) {
+        //		Log.i(TAG, "getTrimedString   s = " + s);
+        if (s == null) {
+            return false;
+        }
+        if (trim) {
+            s = s.trim();
+        }
+        if (s.length() <= 0) {
+            return false;
+        }
+
+        currentString = s;
+
+        return true;
+    }
+
+    public static String getCorrectPhone(TextView tv) {
+        return getCorrectPhone(getString(tv));
+    }
+    /**获取去掉所有 空格 、"-" 、"+86" 后的phone
+     * @param phone
+     * @return
+     */
+    public static String getCorrectPhone(String phone) {
+        if (isNotEmpty(phone, true) == false) {
+            return "";
+        }
+
+        phone = getNoBlankString(phone);
+        phone = phone.replaceAll("-", "");
+        if (phone.startsWith("+86")) {
+            phone = phone.substring(3);
+        }
+        return phone;
+    }
 }

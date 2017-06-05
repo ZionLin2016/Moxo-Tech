@@ -11,9 +11,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 
 import com.closedevice.fastapp.SimpleBackActivity;
+import com.closedevice.fastapp.model.response.bk.BKItem;
 import com.closedevice.fastapp.service.DownloadService;
 import com.closedevice.fastapp.service.ICallbackResult;
+import com.closedevice.fastapp.ui.LoginActivity;
 import com.closedevice.fastapp.ui.MainActivity;
+import com.closedevice.fastapp.ui.RegisterActivity;
 import com.trello.rxlifecycle.components.support.RxFragmentActivity;
 
 
@@ -57,13 +60,17 @@ public class Router {
         context.startActivityForResult(intent, requestCode);
     }
 
-    public static void showDetail(Activity activity, String title, String url, String picUrl, String from, String ctime) {
+    public static void showDetail(Activity activity, BKItem data) {
         Bundle bundle = new Bundle();
-        bundle.putString("title", title);
-        bundle.putString("url", url);
-        bundle.putString("picUrl", picUrl);
-        bundle.putString("from", from);
-        bundle.putString("ctime", from);
+        bundle.putString("className", data.getClass_name());
+        bundle.putString("courseName", data.getCourse_name());
+        bundle.putString("picUrl", data.getCover_address());
+        bundle.putString("userName", data.getUsername());
+        bundle.putString("classType", data.getClass_type());
+        bundle.putString("code", data.getInvite_code());
+        bundle.putString("aims", data.getStudy_aims());
+        bundle.putString("syllabus", data.getSyllabus());
+        bundle.putString("schedule", data.getExam_schedule());
 
         showSimpleBack(activity, SimpleBackPage.DETAIL, bundle);
     }
@@ -106,6 +113,18 @@ public class Router {
 
     }
 
+    public static void showLogin(Activity activity) {
+        Intent intent = new Intent(activity, LoginActivity.class);
+        activity.startActivity(intent);
+        activity.finish();
+    }
+
+    public static void showReg(Activity activity) {
+        Intent intent = new Intent(activity, RegisterActivity.class);
+        activity.startActivity(intent);
+        activity.finish();
+    }
+
     public static void showMain(Activity activity) {
         Intent intent = new Intent(activity, MainActivity.class);
         activity.startActivity(intent);
@@ -127,6 +146,44 @@ public class Router {
     }
 
     public static void setClassDetail(FragmentActivity activity) {
-        showSimpleBack(activity, SimpleBackPage.CLASS_DETAIL);
+        showSimpleBack(activity, SimpleBackPage.SET_CLASS_DETAIL);
     }
+
+    public static void uploadFromPc(FragmentActivity activity){
+        showSimpleBack(activity, SimpleBackPage.UPLOAD_FROM_PC);
+    }
+
+    public static void uploadUrl(FragmentActivity activity){
+        showSimpleBack(activity, SimpleBackPage.UPLOAD_URL);
+    }
+    public static void uploadDoc(FragmentActivity activity){
+        showSimpleBack(activity, SimpleBackPage.UPLOAD_DOC);
+    }
+
+    public static void addNotify(FragmentActivity activity){
+        showSimpleBack(activity, SimpleBackPage.ADD_NOTIFY);
+    }
+
+    public static void setUrlAddress(FragmentActivity activity){
+        showSimpleBack(activity, SimpleBackPage.SET_URL_ADDRESS);
+    }
+
+    public static void setUrlTitle(FragmentActivity activity){
+        showSimpleBack(activity, SimpleBackPage.SET_URL_TITLE);
+    }
+
+    public static void setUrlGroup(FragmentActivity activity){
+        showSimpleBack(activity, SimpleBackPage.SET_URL_GROUP);
+    }
+
+    public static void setUrlAim(FragmentActivity activity){
+        showSimpleBack(activity, SimpleBackPage.SET_URL_AIM);
+    }
+
+    public static void setUrlDemand(FragmentActivity activity){
+        showSimpleBack(activity, SimpleBackPage.SET_URL_DEMAND);
+    }
+//    public static void showClassDetail(FragmentActivity activity){
+//        showSimpleBack(activity, SimpleBackPage.SHOW_CLASS_DETAIL);;
+//    }
 }

@@ -1,7 +1,9 @@
 package com.closedevice.fastapp.model.base;
 
 
-public abstract class Entity extends Base {
+import java.io.Serializable;
+
+public abstract class Entity implements Serializable {
 
     protected String id;
 

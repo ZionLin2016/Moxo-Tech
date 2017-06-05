@@ -1,7 +1,5 @@
 package com.closedevice.fastapp.ui.groupclass.fragment;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.InputFilter;
@@ -12,9 +10,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.closedevice.fastapp.R;
+import com.closedevice.fastapp.ui.groupclass.model.DetailListBean;
+import com.closedevice.fastapp.ui.groupclass.model.EnumEventType;
+import com.closedevice.fastapp.ui.groupclass.model.MessageEvent;
+import com.google.gson.Gson;
+
+import org.greenrobot.eventbus.EventBus;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -37,7 +41,7 @@ public class ClassDetailFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(getLayoutId(), container, false);
+        View view = inflater.inflate(R.layout.fragment_class_detail, container, false);
         ButterKnife.bind(this, view);
         initData();//操作要做bind之后，否则空指针
         return view;
@@ -50,9 +54,6 @@ public class ClassDetailFragment extends Fragment {
         et_exam_schedule.setFilters(new InputFilter[]{new InputFilter.LengthFilter(300)});
     }
 
-    private int getLayoutId() {
-        return R.layout.fragment_class_detail;
-    }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -64,10 +65,23 @@ public class ClassDetailFragment extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.item_done:
-                Toast.makeText(getActivity(),"完成", Toast.LENGTH_SHORT);
+                DetailListBean dlb = new DetailListBean();
+                dlb.setStatus("已设置");
+                dlb.setStudy_aims(et_study_aims.getText().toString());
+                dlb.setSyllabus(et_syllabus.getText().toString());
+                dlb.setExam_schedule(et_exam_schedule.getText().toString());
+
+                Gson gson = new Gson();
+                MessageEvent me = new MessageEvent();
+                me.setType(EnumEventType.CLASS_DETAIL.getType());
+                me.setData(gson.toJson(dlb));
+                EventBus.getDefault().post(me);
+                getActivity().finish();
                 break;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

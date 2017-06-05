@@ -4,6 +4,8 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="float_action_button">16dp</dimen>
     <dimen name="et_margin">8dp</dimen>
+    <dimen name="sectionHeight">50dp</dimen>
+    <dimen name="chat_title_bar_txt_size">20sp</dimen>
 
     <dimen name="text_size_32">32.0dip</dimen>
     <dimen name="text_size_31">31.0dip</dimen>
