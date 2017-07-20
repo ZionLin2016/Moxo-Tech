@@ -75,14 +75,6 @@ public class Router {
         showSimpleBack(activity, SimpleBackPage.DETAIL, bundle);
     }
 
-    public static void showRecentRead(Activity activity) {
-        showSimpleBack(activity, SimpleBackPage.RECENT_READ);
-    }
-
-    public static void showMyLike(Activity activity) {
-        showSimpleBack(activity, SimpleBackPage.LIKE_READ);
-    }
-
 
     public static void startDownloadService(Context context, String url, String tilte) {
         final ICallbackResult callback = new ICallbackResult() {

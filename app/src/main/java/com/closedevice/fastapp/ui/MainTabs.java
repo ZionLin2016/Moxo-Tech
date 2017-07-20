@@ -3,7 +3,6 @@ package com.closedevice.fastapp.ui;
 
 import com.closedevice.fastapp.R;
 import com.closedevice.fastapp.ui.CourseTable.fragment.CourseTableFragment;
-import com.closedevice.fastapp.ui.CourseTable.fragment.GanPagerFragment;
 import com.closedevice.fastapp.ui.setting.fragment.SettingFragment;
 import com.closedevice.fastapp.ui.groupclass.fragment.BKFragment;
 

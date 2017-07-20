@@ -12,7 +12,6 @@ import com.closedevice.fastapp.AppContext;
 import com.closedevice.fastapp.R;
 import com.closedevice.fastapp.base.ui.BaseActivity;
 import com.closedevice.fastapp.base.ui.BaseFragment;
-import com.closedevice.fastapp.model.LikeRecordRealm;
 import com.closedevice.fastapp.util.OSUtil;
 import com.closedevice.fastapp.view.empty.EmptyLayout;
 //import com.tencent.smtt.sdk.WebChromeClient;
