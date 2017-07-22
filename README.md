@@ -23,15 +23,25 @@ Moxo-Tech采用轻量级急速开发框架，基于Fragment+RxJava+Retrofit 2.0+
 Preview
 -------------
 
+![此处输入图片的描述][2]
+
+![此处输入图片的描述][3]
+
+
 ![此处输入图片的描述][4]
 
 ![此处输入图片的描述][5]
-
 
 ![此处输入图片的描述][6]
 
 ![此处输入图片的描述][7]
 
+
+![此处输入图片的描述][8]
+
+![此处输入图片的描述][9]
+
+![此处输入图片的描述][10]
 
 ---------------
 
@@ -95,8 +105,13 @@ Version
 
 
   [1]: lsd2015y@Outlook.com
-  [4]: https://raw.githubusercontent.com/closedevice/FastApp/master/screenshots/appstart.png
-  [5]: https://raw.githubusercontent.com/closedevice/FastApp/master/screenshots/gan.png
-  [6]: https://raw.githubusercontent.com/closedevice/FastApp/master/screenshots/wx.png
-  [7]: https://raw.githubusercontent.com/closedevice/FastApp/master/screenshots/settingspng.png
+  [2]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/1.png
+  [3]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/2.png
+  [4]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/3.png
+  [5]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/4.png
+  [6]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/5.png
+  [7]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/6.png
+  [8]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/7.png
+  [9]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/8.png
+  [10]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/9.png
  
