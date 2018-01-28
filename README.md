@@ -23,23 +23,23 @@ Moxo-Tech采用轻量级急速开发框架，基于Fragment+RxJava+Retrofit 2.0+
 Preview
 -------------
 
-![此处输入图片的描述](Moxo-Tech/screenshots/1.png)
+![此处输入图片的描述](https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/1.png?raw=true)
 
-![此处输入图片的描述](Moxo-Tech/screenshots/2.png)
+![此处输入图片的描述](https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/2.png?raw=true)
 
-![此处输入图片的描述](Moxo-Tech/screenshots/3.png)
+![此处输入图片的描述](https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/3.png?raw=true)
 
-![此处输入图片的描述](Moxo-Tech/screenshots/4.png)
+![此处输入图片的描述](https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/4.png?raw=true)
 
-![此处输入图片的描述](Moxo-Tech/screenshots/5.jpg)
+![此处输入图片的描述](https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/5.jpg?raw=true)
 
-![此处输入图片的描述](Moxo-Tech/screenshots/6.jpg)
+![此处输入图片的描述](https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/6.jpg?raw=true)
 
-![此处输入图片的描述](Moxo-Tech/screenshots/7.jpg)
+![此处输入图片的描述](https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/7.jpg?raw=true)
 
-![此处输入图片的描述](Moxo-Tech/screenshots/8.jpg)
+![此处输入图片的描述](https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/8.jpg?raw=true)
 
-![此处输入图片的描述](Moxo-Tech/screenshots/9.png)
+![此处输入图片的描述](https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/9.png?raw=true)
 
 ---------------
 
