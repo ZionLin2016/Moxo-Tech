@@ -113,6 +113,6 @@ Version
   [6]: https://raw.githubusercontent.com/ZionLin2016/Moxo-Tech/master/screenshots/5.jpg
   [7]: https://raw.githubusercontent.com/ZionLin2016/Moxo-Tech/master/screenshots/6.jpg
   [8]: https://raw.githubusercontent.com/ZionLin2016/Moxo-Tech/master/screenshots/7.jpg
-  [9]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/8.png
-  [10]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/9.png
+  [9]: https://raw.githubusercontent.com/ZionLin2016/Moxo-Tech/master/screenshots/8.jpg
+  [10]: https://raw.githubusercontent.com/ZionLin2016/Moxo-Tech/master/screenshots/9.jpg
  
