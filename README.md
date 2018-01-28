@@ -16,30 +16,30 @@ Moxo-Tech采用轻量级急速开发框架，基于Fragment+RxJava+Retrofit 2.0+
 本项目基于Material Design+RxJava+Retrofit 2.0+Glide+GreenDao构建了一个良好MVC架构的客户端模型，对新手友好度更高。
 
 
-本项目仍在不断的完善阶段，欢迎及时向我反馈[email][1]。如果对你有帮助欢迎点个star、fork.
+本项目仍在不断的完善阶段，欢迎及时向我反馈[email](lsd2015y@Outlook.com)。如果对你有帮助欢迎点个star、fork.
 
 ---------------
 
 Preview
 -------------
 
-![此处输入图片的描述][2]
+![此处输入图片的描述](Moxo-Tech/screenshots/1.png)
 
-![此处输入图片的描述][3]
+![此处输入图片的描述](Moxo-Tech/screenshots/2.png)
 
-![此处输入图片的描述][4]
+![此处输入图片的描述](Moxo-Tech/screenshots/3.png)
 
-![此处输入图片的描述][5]
+![此处输入图片的描述](Moxo-Tech/screenshots/4.png)
 
-![此处输入图片的描述][6]
+![此处输入图片的描述](Moxo-Tech/screenshots/5.jpg)
 
-![此处输入图片的描述][7]
+![此处输入图片的描述](Moxo-Tech/screenshots/6.jpg)
 
-![此处输入图片的描述][8]
+![此处输入图片的描述](Moxo-Tech/screenshots/7.jpg)
 
-![此处输入图片的描述][9]
+![此处输入图片的描述](Moxo-Tech/screenshots/8.jpg)
 
-![此处输入图片的描述][10]
+![此处输入图片的描述](Moxo-Tech/screenshots/9.png)
 
 ---------------
 
@@ -98,21 +98,7 @@ Version
 1.提交第一版
 
 ###备注
-由于本人学习方向是JavaEE方向，这个项目可能没剩余的精力去完善它，就先这样了,服务器代码在另外一个仓库[IMSDK](https://github.com/ZionLin2016/IMSDK.git)  ，如果对你有帮助请star一下，谢谢！
+由于本人学习方向是JavaEE方向，这个项目可能没剩余的精力去完善它，就先这样了,服务器代码在另外一个仓库[IMSDK](https://github.com/ZionLin2016/IMSDK.git) ，如果对你有帮助请star一下，谢谢！
 
 --------------------
-
-
-
-
-  [1]: lsd2015y@Outlook.com
-  [2]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/1.png
-  [3]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/2.png
-  [4]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/3.png
-  [5]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/4.png
-  [6]: https://raw.githubusercontent.com/ZionLin2016/Moxo-Tech/master/screenshots/5.jpg
-  [7]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/6.jpg
-  [8]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/7.jpg
-  [9]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/8.jpg
-  [10]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/9.png
  
