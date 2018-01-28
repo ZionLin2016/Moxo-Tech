@@ -98,7 +98,7 @@ Version
 1.提交第一版
 
 ###备注
-由于本人学习方向是JavaEE方向，这个项目可能没剩余的精力去完善它，就先这样了,服务器代码在另外一个仓库![此处输入图片的描述][11]，如果对你有帮助请star一下，谢谢！
+由于本人学习方向是JavaEE方向，这个项目可能没剩余的精力去完善它，就先这样了,服务器代码在另外一个仓库[IMSDK](https://github.com/ZionLin2016/IMSDK.git)  ，如果对你有帮助请star一下，谢谢！
 
 --------------------
 
@@ -115,5 +115,4 @@ Version
   [8]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/7.png
   [9]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/8.png
   [10]: https://github.com/ZionLin2016/Moxo-Tech/blob/master/screenshots/9.png
-  [11]: https://github.com/ZionLin2016/IMSDK.git
  
