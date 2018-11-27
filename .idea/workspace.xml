@@ -11,408 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f24d6ce-f4fe-4fe4-b3dc-ce8280c71184" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastApp-master.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Moxo-Tech-Server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Moxo-Tech-Server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Moxo-Tech-Server/IMSDK/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Moxo-Tech-Server/IMSDK/bin/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Moxo-Tech-Server/IMSDK/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Moxo-Tech-Server/WebContent/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libs/joda-time-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/closedevice/app/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/android/support/v4/widget/MySwipeRefreshLayout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/AppConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/AppContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/AppCrash.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/AppManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/messages/MessageListActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/messages/VideoActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/models/Data.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/models/DefaultUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/models/GuideList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/models/MyMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/models/Ping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/models/SelectGuide.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/models/StopGuide.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/models/TeacherBegin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/models/TouristOut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/protocol/AudioProtocol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/protocol/BasicProtocol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/protocol/DataProtocol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/server/BasicMembership.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/server/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/server/ClientHub.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/server/Group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/server/ResponseCallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/server/TourMembership.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/util/ChatPacket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/util/GetTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/util/NetworkTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/util/ProtocolType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/util/SocketUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/util/Tool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/views/ChatView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/IM/views/WaveView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/SimpleBackActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/ClientFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/ClientHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/convert/bk/BKGsonConverterFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/convert/bk/BKGsonRequestBodyConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/convert/bk/BKGsonResponseBodyConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/convert/gan/GanGsonConverterFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/convert/gan/GanGsonRequestBodyConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/convert/gan/GanGsonResponseBodyConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/exception/ApiErrorCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/exception/ApiErrorHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/remote/ApiFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/remote/BKApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/remote/FirApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/remote/UserApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/BaseApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/BaseObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/BaseSubscriber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/adapter/BaseViewPagerAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/adapter/ListBaseAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/inter/IBaseFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/inter/IBaseView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/inter/IPagerFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/ui/BaseActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/ui/BaseDetailFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/ui/BaseFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/ui/BaseListFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/ui/BaseTabFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/cache/CacheCleanManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/cache/DiskLruCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/cache/DiskLruCacheUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/db/DBHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/base/Entity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/base/ListEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/courseTable/ColorUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/courseTable/CornerTextView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/courseTable/CourseDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/courseTable/CourseModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/record/BkRecord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/response/BaseResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/response/bk/BKItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/response/bk/BKResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/response/fir/Version.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/response/gan/GanImages.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/response/gan/GanItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/response/gan/GanResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/response/member/MemberItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/uploadFile/UploadList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/model/uploadFile/UploadMsg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/router/Router.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/router/SimpleBackPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/service/DownloadService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/service/ICallbackResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/AppStart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/UserInfoActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/adapter/MemberAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/AddNotifyFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/SetUrlAdrFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/SetUrlAimFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/SetUrlDemandFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/SetUrlGroupFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/SetUrlTitleFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/ShowDetailFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/ShowFunctionFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/ShowMemberFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/ShowNotifyFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/ShowResourcesFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/UploadDocFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/UploadFromPcFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInside/fragment/UploadUrlFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/BkInsideActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/CourseTable/adapter/GanAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/CourseTable/fragment/CourseTableFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/LoginActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/MainTabs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/RegisterActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/common/CustomPopWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/common/DetailFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/adapter/BKAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/fragment/BKFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/fragment/ClassDetailFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/fragment/ClassNameFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/fragment/FillClassFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/fragment/InputCodeFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/fragment/SetBookFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/model/ClassList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/model/DetailListBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/model/EnumEventType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/model/MessageEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/groupclass/model/UserInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/setting/fragment/AboutFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/setting/fragment/SettingFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/BsPatchUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/CommonUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/CorePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/DateUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/FileUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/ImageLoaderUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/ImagePathUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/LogUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/OSUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/SafeUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/StringUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/SystemBarTintManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/TimeZoneUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/UpTaskUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/UpdateManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/util/UtilsImageProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/SquareImageView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/TypeTextView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/dialog/CommonToast.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/dialog/DialogHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/dialog/IDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/dialog/WaitDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/empty/EmptyLayout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/loading/Animatable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/loading/Loading.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/loading/LoadingCircleDrawable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/loading/LoadingDrawable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/tab/SlidingTabLayout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/view/tab/SlidingTabStrip.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bspatch.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bspatch_util.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/blocksort.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/bzip2.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/bzip2recover.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/bzlib.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/bzlib.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/bzlib_private.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/compress.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/crctable.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/decompress.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/dlltest.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/huffman.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/mk251.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/randtable.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/spewG.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/bzip2/unzcrash.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/com_closedevice_fastapp_util_BsPatchUtil.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/jni/em.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/close_enter_fade_forward.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/close_exit_slide_out_right.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/hold.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/null_anim.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/open_enter_slide_in_left.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/open_exit_fade_back.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/right_push_in.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/color/primarybar_txt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/color/tab_sliding.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/bg_dialog.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/bg_toast.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/btn_radio_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/btn_radio_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/default_cover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_empty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_loading.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_loading_error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_network_error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_right_tip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/actionbar_back_icon_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_file.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_notification.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_tab_class_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_tab_class_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_tab_find_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_tab_find_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_tab_user_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_tab_user_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/tab_notification_bg.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/add_class_cover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/bg_appstart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/divider.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_appstart_bird.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_author.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_cache.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_clear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_like_read.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_look.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_night.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_time.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_toolbar_add_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_toolbar_add_p.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_toolbar_like_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_toolbar_like_p.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_update.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/selector_toolbar_add.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/selector_toolbar_like.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_radio_selector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/button_border_radius.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/deadpool.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/dialog_item_single_choice.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/em_show_head_toast_bg.9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_add_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_call_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_chat_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_email_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_folder_open_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_library_books_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ironman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/list_item_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/load_spinner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/login_corner_border.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/progress_custom_bg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/progressloading.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/register2_photo_default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tab_icon_active.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tab_icon_gan.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tab_icon_user.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/touch_clear_bg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/actionbar_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_bk_inside.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_simple_fragment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_start.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_info.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_video.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/chat_activity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_common.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_notify.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_class_detail.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_class_name.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_course_table.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_detail.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fill_class.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_input_code.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_meizhi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_pull_refresh_listview.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_set_book.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_set_url_adr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_set_url_aim.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_set_url_demand.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_set_url_group.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_set_url_title.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_setting.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_detail.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_function.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_member.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_notify.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_resources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_swipe_refresh_recyclerview.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_upload_doc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_upload_from_pc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_upload_url.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_viewpager.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_class_list.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_dialog.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_footer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_gan.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_like_article.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_member.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_recent_article.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/permission_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/popup_bottom_alpha.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/popup_bottom_select_pic.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_actionbar_default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_base_toast.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_dialog_header.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_error_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_line.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_notification.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_progress.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_tab_gan_indicator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_tab_main_indicator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_toast.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bk_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bk_summary.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/contact_bottom_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/done.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/join_class.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/my_like.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/navigation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/recent_read.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/biz_ask_my_publish_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/biz_pc_main_night.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/biz_pc_main_promo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/box_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/night_biz_pc_account_pwd_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/night_biz_pc_account_username_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/pc_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/pic_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/url_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/type_in.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/closedevice/fastapp/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/androidTest/java/px/com/photoselectorlibrary/ApplicationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/java/px/com/photoselectorlibrary/CheckPermission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/java/px/com/photoselectorlibrary/ImageBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/java/px/com/photoselectorlibrary/ImageSelectorDetailsActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/java/px/com/photoselectorlibrary/ImageSelectorListActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/java/px/com/photoselectorlibrary/MyImageView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/java/px/com/photoselectorlibrary/PermissionActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/java/px/com/photoselectorlibrary/PreviewImageActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/java/px/com/photoselectorlibrary/ScreenUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/java/px/com/photoselectorlibrary/SerializableMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/drawable-xhdpi/arrow_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/drawable-xhdpi/checkbox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/drawable-xhdpi/checkbox_select.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/drawable-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/drawable/checkbox_selector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/layout/image_rec_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/layout/image_selector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/layout/image_selector_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/layout/image_selector_recy_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/layout/permission_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/layout/preview_image_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/layout/top_bar_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoselectorlibrary/src/test/java/px/com/photoselectorlibrary/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
     </list>
     <ignored path="FastApp-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -487,12 +90,43 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="745442405">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="3" />
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Git file" value="3" />
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="FastApp-master" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Moxo-Tech-Server/IMSDK/src/com/imsdk/bean/Data.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Moxo-Tech-Server/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -2453,46 +2087,29 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="AndroidView" proportions="" version="1">
-      <autoscrollFromSource AndroidView="true" />
+    <navigator proportions="" version="1">
+      <autoscrollFromSource AndroidView="true" ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView">
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Moxo-Tech-Client" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="e9137016:NonAndroidModuleNode" />
+              <item name="Moxo-Tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Moxo-Tech" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Moxo-Tech-Client" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="e9137016:NonAndroidModuleNode" />
-              <item name="tests" type="f7eae187:NonAndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="Moxo-Tech-Client" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="e9137016:NonAndroidModuleNode" />
-              <item name="tests" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Moxo-Tech-Client" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="e9137016:NonAndroidModuleNode" />
-              <item name="tests" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Moxo-Tech-Client" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+              <item name="Moxo-Tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Moxo-Tech" type="462c0819:PsiDirectoryNode" />
+              <item name="Moxo-Tech-Server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2502,8 +2119,9 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="D:/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543326966450" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543332004593" />
     <property name="device.picker.selection" value="192.168.93.101:5555" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Moxo-Tech-Client" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -2513,11 +2131,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Moxo-Tech-Server" />
       <recent name="G:\androidtest\FastApp-master\app\src\main\java\com\closedevice\fastapp\api\remote" />
       <recent name="G:\androidtest\FastApp-master\app\src\main\java\com\closedevice\fastapp\model\response" />
       <recent name="G:\androidtest\FastApp-master\app\src\main\java\com\closedevice\fastapp\api\convert\" />
       <recent name="G:\androidtest\FastApp-master\app\src\main\java\com\closedevice\fastapp\IM\models" />
-      <recent name="G:\androidtest\FastApp-master\app\src\main\java\com\closedevice\fastapp\IM\util" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.closedevice.fastapp.ui.BkInside.fragment" />
@@ -2670,11 +2288,12 @@
       <updated>1491833331895</updated>
       <workItem from="1543321127115" duration="4492000" />
       <workItem from="1543326980204" duration="55000" />
+      <workItem from="1543331355913" duration="504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4547000" />
+    <option name="totallyTimeSpent" value="5051000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2688,7 +2307,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="29" width="1920" height="1051" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22329059" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22596154" />
       <window_info id="Structure" order="1" weight="0.23358779" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Build Variants" order="3" side_tool="true" />
@@ -2707,7 +2326,7 @@
       <window_info anchor="bottom" id="Android Monitor" order="7" sideWeight="0.48487142" weight="0.45286196" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32996634" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5151286" side_tool="true" weight="0.8939394" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Gradle Console" order="11" sideWeight="0.5075643" side_tool="true" weight="0.4057239" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4924357" weight="0.4057239" />
       <window_info anchor="bottom" id="Build" order="13" weight="0.32896176" />
@@ -2775,9 +2394,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/ui/BaseFragment.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/inter/IBaseView.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/inter/IPagerFragment.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/inter/IBaseFragment.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/adapter/BaseViewPagerAdapter.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/base/adapter/ListBaseAdapter.java" />
@@ -2812,33 +2428,30 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/ui/MainTabs.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/api/convert/bk/BKGsonConverterFactory.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/closedevice/fastapp/db/DBHelper.java" />
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle" />
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/closedevice/app/ExampleInstrumentedTest.java" />
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/cn/lsd/app/ExampleInstrumentedTest.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_class_name.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_set_url_aim.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
     <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro" />
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties" />
     <entry file="file://$PROJECT_DIR$/app/build.gradle" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lsd/app/api/convert/bk/BKGsonConverterFactory.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lsd/app/api/convert/bk/BKGsonRequestBodyConverter.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lsd/app/api/convert/bk/BKGsonResponseBodyConverter.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lsd/app/api/convert/gan/GanGsonConverterFactory.java" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
+        <state relative-caret-position="-913" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Moxo-Tech-Server/IMSDK/src/com/imsdk/bean/Data.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Moxo-Tech-Server/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
