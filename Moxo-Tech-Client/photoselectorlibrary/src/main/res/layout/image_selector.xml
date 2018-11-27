@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<include
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/top_bar_layout"
+    />
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rec_image_list"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    />
+    <RelativeLayout
+        android:id="@+id/rl_selector_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/tv_selector_list_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预览"
+            android:padding="10dp"
+            android:textColor="#C1C1C1"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/tv_selector_list_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="确定"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

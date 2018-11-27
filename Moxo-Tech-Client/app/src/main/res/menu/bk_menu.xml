@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fastapp="http://schemas.android.com/apk/res-auto">
+    <!-- 一级菜单 -->
+    <item
+        android:id="@+id/menu_chioce"
+        android:icon="@drawable/selector_toolbar_add"
+        android:visible="true"
+        android:title="添加"
+        fastapp:showAsAction="ifRoom|withText">
+
+        <!-- 二级菜单 -->
+        <menu>
+            <item
+                android:id="@+id/create_bk"
+                android:title="创建班课">
+            </item>
+            <item
+                android:id="@+id/join_bk_bycode"
+                android:title="使用邀请码加入班课">
+            </item>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/ask_help"
+        android:visible="true"
+        fastapp:showAsAction="ifRoom|withText"
+        android:title="帮助" >
+
+        <!-- 二级菜单 -->
+        <menu>
+            <item
+                android:id="@+id/using_help"
+                android:title="使用帮助">
+            </item>
+            <item
+                android:id="@+id/common_problems"
+                android:title="常见问题解答">
+            </item>
+        </menu>
+    </item>
+
+
+</menu>

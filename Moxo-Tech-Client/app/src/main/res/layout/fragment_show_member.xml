@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/lv_member_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:background="@android:color/transparent"
+                android:divider="#D4D4D4"
+                android:descendantFocusability="afterDescendants"
+                android:dividerHeight="1px"
+                android:fastScrollEnabled="true" />
+        </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="px.com.photoselectorlibrary">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".ImageSelectorListActivity"></activity>
+        <activity android:name=".ImageSelectorDetailsActivity"></activity>
+        <activity android:name=".PermissionActivity"/>
+        <activity android:name=".PreviewImageActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.closedevice.app.ui.BkInside.fragment.SetUrlTitleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_url_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/et_margin"
+            android:layout_marginRight="@dimen/et_margin"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:hint="请输入标题" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">智慧课堂</string>
+
+
+    <!-- Error View -->
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+
+    <string name="tip_load_data_error">对不起,无法加载数据.</string>
+
+    <string name="loading">加载中…</string>
+    <string name="loading_no_more">没有更多了</string>
+    <string name="main_tab_meizhi1">班课</string>
+    <string name="main_tab_meizhi2">课程表</string>
+    <string name="main_tab_meizhi3">我的</string>
+    <string name="update_checking">正在检查更新...</string>
+    <string name="update_now">更新</string>
+    <string name="update_delay">暂不更新</string>
+    <string name="update_notice">有新版本</string>
+    <string name="update_no_new">已经是新版本了</string>
+    <string name="update_check_error">网络异常，无法获取新版本信息</string>
+    <string name="setting_clear_cache">wipe cache?</string>
+    <string name="error_invalid_client">非法客户端</string>
+    <string name="error_no_internet">无网络连接</string>
+    <string name="error_other">自定义错误</string>
+    <string name="error_unknown">发生了一点问题，稍后再试</string>
+    <string name="error_service">服务不可用</string>
+    <string name="tip_click_back_again_to_exist">再按一次退出</string>
+    <string name="title_activity_fill_class">FillClassActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="exam_schedule">考试安排</string>
+    <string name="syllabus">教学进度</string>
+    <string name="study_aims">学习要求</string>
+    <string name="title_activity_bk_inside">进入班级</string>
+    <string name="title_file">资源</string>
+    <string name="titile_member">成员</string>
+    <string name="title_home">活动</string>
+    <string name="title_notifications">通知</string>
+    <string name="title_dashboard">详情</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+    <string name="input_hint">Send message</string>
+    <string name="message_click_hint">Message click event</string>
+    <string name="message_long_click_hint">Message long press event</string>
+    <string name="avatar_click_hint">Avatar click event</string>
+
+    <string-array name="messages_array">
+        <item>How are you</item>
+        <item>Fine. And you?</item>
+        <item>Me, too. Is there any news today?</item>
+        <item>Yep! I got a news here: boom! Tomorrow is the end of The Walking Dead!</item>
+        <item>Are you kidding me?</item>
+        <item>Absolutely not!</item>
+        <item>Jesus, that\'s crazy</item>
+        <item>I thought no one would gonna to make it</item>
+        <item>That\'s cruel, I don\'t like it, maybe there is a favourable turn</item>
+        <item>Hope so</item>
+    </string-array>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_register">注册</string>
+    <string name="title_activity_user_info">用户信息</string>
+    <string name="title_activity_temp">TempActivity</string>
+
+    <!-- Request permission start -->
+    <string name="rationale_record_voice">This app needs access microphone to record voice.</string>
+    <string name="rationale_photo">This app needs access photos.</string>
+    <string name="rationale_camera">This app needs access camera.</string>
+    <!-- Request permission end -->
+</resources>
